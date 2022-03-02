@@ -1,0 +1,572 @@
+@import url('./fontawesome/icon/main.min.css');
+*{
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --powerpoint-main:#b8482b;
+    --powerpoint-main-light:#cf684e;
+    --powerpoint-main-dark:#8a2e17;
+}
+
+/*powerpoint tab */
+
+body .powerpoint-area{
+    height:100vh;
+    overflow: hidden;
+}
+
+body .powerpoint-area .powerpoint-tab{
+   height:17.5vh; 
+   overflow: hidden; 
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header{
+    height:7.5vh; 
+    width:100%; 
+    border-bottom: 1px solid var(--light);
+    background-color:var(--powerpoint-main);
+    overflow: hidden;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top{
+    height:4vh; 
+    padding:10px;
+}
+
+body .powerpoint-area .flex-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top button{
+    border: none;
+    font-size:16px;
+    color:var(--white);
+    background-color: transparent;
+    font-weight:10;
+    cursor: pointer;
+    padding:7px 10px; 
+    margin:0 5px;
+    transition:all 1s ease-in;
+    outline: none;
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top button:hover{
+    background-color: var(--powerpoint-main-light);
+}
+
+
+
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top article .block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height:10px; 
+    width:6px;
+    margin-top:-4px;
+    color:var(--white);
+    margin-left:12px;
+    cursor: pointer;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top article .fa-save{
+    margin-right:20px;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top article .fa-angle-down{
+    color:var(--white);
+    font-weight:600 !important; 
+    font-size:12px;
+    cursor: pointer;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top article .block i{
+    height:5px;
+    font-size:10px;
+    cursor: pointer;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top article h5{
+    margin:0;
+    color:var(--light);
+    font-weight:500;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top article{
+    min-height:22px;
+    min-width:100px; 
+    display: flex;
+    align-items: center;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .top,
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .tab-header-list{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form {
+    transition:all 1s ease-in;
+    padding:7px 4px;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form:hover{
+    background-color:var(--powerpoint-main-dark);
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form:hover i,
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form input:hover,
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form input:hover::placeholder{
+    color:var(--white) !important;
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form .d-flex{
+    align-items: center;
+    min-width:220px;
+    margin:0 6px;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form .d-flex i{
+    font-size:20px;
+    margin:4px;
+    color:var(--silver);
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form .d-flex input{
+    height:20px;
+    font-size:14px;
+    background-color: transparent;
+    color:var(--white);
+    border: none;
+    border-color: transparent !important;
+    border-radius:0px !important;
+    min-width:95%;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form input:focus{
+   box-shadow:0px transparent;  
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul form .d-flex input::placeholder{
+    color:var(--silver);
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul,
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .tab-options{ 
+    display: flex;
+    align-items: center;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul{
+    padding:0;
+    margin:0; 
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul span,
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul li{
+    font-size:13.5px;
+    padding:10px 10px;
+    height:42px; 
+    color:var(--white);
+    transition:all 1s ease-in;
+    cursor: pointer;
+    margin:0 0.5px;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul span:hover,
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul li:hover{
+    background-color:var(--powerpoint-main-light);
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul li.active{
+    color:var(--powerpoint-main-light);
+    background-color:var(--light);
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header ul li.active:hover{
+    background-color:var(--light) !important;
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .tab-options a li{
+    padding:2px 10px;
+    color:var(--white);
+    font-size:13.5px;
+    height:30px;
+    display: flex;
+    align-items: center;
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .tab-options a:nth-child(1):hover{
+    text-decoration: underline;
+    text-decoration-color:var(--white);
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .tab-options a:nth-child(2) li{
+    background-color:var(--powerpoint-main-dark);
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-header .tab-options a .fa{
+    margin-right:8px;
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-body{
+    height:10vh;
+    border-bottom:1px solid  var(--gray);
+    background-color:var(--light);
+    padding:10px;
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-body aside{
+    display: none;
+    transition:all 1s ease-in;
+}
+
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-body aside.active{
+    display: flex;
+}
+
+
+body .file-explorer{
+    opacity:0;
+    z-index:-10000;
+    overflow: hidden;
+    transition:all 0.5s ease-in;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh; 
+    display: flex;  
+}
+
+body .file-explorer.show-explorer{
+    opacity:1;
+    overflow: visible;
+    z-index:10000; 
+}
+
+body .file-explorer .explorer-right-side,
+body .file-explorer .explorer-left-side{
+    height:100vh;
+}
+
+body .file-explorer .explorer-left-side{
+    width:125px;
+    min-width:125px !important;
+    background:var(--powerpoint-main);
+    display: flex;
+    flex-direction: column;
+}
+
+body .file-explorer .explorer-left-side aside button{
+    border-radius:0;
+    width:100%;
+    text-align: left;
+    color:var(--white);
+    font-size:12.1px;
+    font-weight:400 !important;
+    letter-spacing:1px; 
+    padding:10px;
+}
+
+body .file-explorer .explorer-left-side aside hr{
+    background:var(--powerpoint-main-light);
+}
+
+body .file-explorer .explorer-left-side aside button.active-btn{
+    background:var(--powerpoint-main-light);
+}
+
+
+body .file-explorer .explorer-left-side aside button:hover{
+    background-color:var(--powerpoint-main-dark);
+}
+
+body .file-explorer .explorer-left-side aside .p1{
+    padding:0 20px;
+}
+
+body .file-explorer .explorer-left-side .toggle-explorer-panel{
+    width:40px;
+    height:40px; 
+    border:2px solid var(--white);
+    margin-left:20px;
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius:100%;
+    cursor: pointer;
+    margin-bottom:20px;
+}
+
+
+body .file-explorer .explorer-left-side .toggle-explorer-panel img{
+    width:18px;
+    height:18px;
+    object-fit: cover;
+}
+
+
+
+body .file-explorer .explorer-right-side{
+    width:100%;
+    background:var(--light);
+}
+
+
+
+
+
+
+/*powerpoint wokspace */
+
+body .powerpoint-area .powerpoint-workspace{
+    height:83.5vh;
+    background:var(--white);
+    position:relative;
+    overflow: hidden;
+}
+
+
+body .powerpoint-area .powerpoint-workspace .top-line{
+    width:100%;
+    height:7vh;
+    background:var(--gray-dark);
+    border-top:1px solid rgb(230, 228, 228); 
+    padding:10px;
+}
+
+body .powerpoint-area .powerpoint-workspace .container-work{
+    display: flex;
+    width:100%;
+    height:76vh; 
+    overflow-y: auto;
+}
+
+body .powerpoint-area .powerpoint-workspace .container-work .left-bar{
+    min-height:100%;  
+    min-width:28px; 
+}
+
+body .powerpoint-area .powerpoint-workspace 
+.container-work .left-bar .row-name{
+    width:28px;
+    height:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding:2px 10px;
+    font-size:13px;
+    background: var(--gray-dark);
+    border-right:1px solid silver;
+    overflow: hidden;
+}
+
+
+ 
+
+body .powerpoint-area .powerpoint-workspace 
+.container-work .left-bar .row-name:nth-child(1){ 
+   border-top:1px solid silver;
+   margin-top:19px;
+}
+
+
+
+body .powerpoint-area .powerpoint-workspace 
+.container-work .left-bar .row-name{
+    border-bottom:1px solid silver;
+    height:26px;
+}
+
+
+
+body .powerpoint-area .powerpoint-workspace .container-work .columns-name{
+    width:100%;
+    height:20px; 
+    background: var(--gray-dark);
+    border-bottom: 1px solid silver;
+    display: flex;
+    overflow: hidden; 
+    position:fixed;
+    top:24.5vh;
+    z-index:100;
+    left:0px; 
+}
+
+body .powerpoint-area .powerpoint-workspace .container-work .columns-name
+.column-name{
+    min-width:80px;
+    height:20px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:15px;
+    color:var(--dark);
+    transition:all 1s ease-in;
+    position: relative;
+    overflow: hidden;
+}
+
+ 
+body .powerpoint-area .powerpoint-workspace .container-work 
+.columns-name .rectangle{
+    border-right:1px solid silver;
+    min-width:28px;
+    height:20px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right:1px solid silver;
+}
+
+.container-work .columns-name
+.column-name .mv-cl{
+    width:7px;
+    height:20px;
+    border-right:1px solid silver;
+    position: absolute;
+    top:0;
+    right:0;
+    cursor:col-resize;
+}
+ 
+
+body .powerpoint-area .powerpoint-workspace .container-work .columns-name
+.column-name:hover{
+    background:rgb(183, 245, 210);
+}
+ 
+body .powerpoint-area .powerpoint-workspace .down-bar{
+    width:100%;
+    height:70px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    background:var(--gray-dark);
+    border-top:1px solid rgb(194, 193, 193);
+}
+
+body .powerpoint-area .powerpoint-workspace .container-work .work-container{
+    height:100%;
+    width:100%;
+    border:1px solid rgb(194, 193, 193); 
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    position: relative; 
+}
+
+body .powerpoint-area .powerpoint-workspace 
+.input-cell-container {
+    width:100%; 
+    height: auto;
+    display: flex;
+    position: relative; 
+    margin-top:20px;
+}
+
+body .powerpoint-area .powerpoint-workspace 
+.input-cell-container .cell-row{
+    min-width:80px;
+    display: flex;
+    margin:0;
+    padding:0;
+    flex-direction: column;
+}
+
+.input-cell-container .cell-row .input{
+    width:100%;
+    height:25px;
+    max-height:25px;
+    outline: none;
+    border-radius:0;
+    border:0.1px solid rgb(216, 215, 215);
+    border-top: none;
+    border-left: none;
+    font-size:14px;
+    position: relative; 
+    text-align: left;
+    padding:1px; 
+}
+
+.input-cell-container .cell-row .input:focus{
+    border:2.5px solid var(--powerpoint-main);
+}
+
+.input-cell-container .cell-row .input:focus::after{
+    position: absolute;
+    content: '';
+    width:9px;
+    height:8px;
+    border:1px solid var(--white);
+    bottom:-5px;
+    right:-5px;
+    background:var(--powerpoint-main);
+}
+
+body .main-contextmenu{
+    position: absolute;
+    top:10px;
+    left:10px;
+    width:200px;
+    height:200px;
+    z-index:100;
+    min-height:300px;
+    box-shadow:0 3px 10px rgba(15, 11, 11, 0.1);
+    background:var(--white);
+    border:1px solid silver;
+    opacity:1;
+    transition:all 0.5s ease-in;
+    padding:4px;
+    display: none;
+}
+
+body .main-contextmenu.showmenu{
+    display: block;
+}
+ 
+
+/**base menu items */
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-body #base-menu{
+    width:100%;
+    height:100%;
+    display: flex; 
+}
+
+body .powerpoint-area .powerpoint-tab .powerpoint-tab-body #base-menu .base-box{
+    min-width:12.4%;
+    height:100%;
+    border-right:1px solid rgb(216, 215, 215);
+    padding:2px 5px;
+ }
+
+
